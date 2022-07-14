@@ -47,24 +47,14 @@ const Header = () => {
           <div className="nav-menu">
             {/* nav list */}
             <ul className="nav-list" onClick={ onClickNav } ref={navlistRef}>
-              <li className="nav-item">
-                <a className="nav-link active-link" href="#home">Home</a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#skills">Skills</a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#projects">Projects</a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#Aboutme">About me</a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#contact">Contact</a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#blog">Blog</a>
-              </li>
+
+              <NavItem name="Home" link="#home" activeLink="active-link" />
+              <NavItem name="Skills" link="#skills" activeLink="" />
+              <NavItem name="Projects" link="#projects" activeLink="" />
+              <NavItem name="About me" link="#Aboutme" activeLink="" />
+              <NavItem name="Contact" link="#contact" activeLink="" />
+              <NavItem name="Blog" link="#blog" activeLink="" />
+
             </ul>
           </div>
           <div className="nav-btn" onClick={onClickMenu} ref= {buttonRef} >

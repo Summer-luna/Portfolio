@@ -10,7 +10,7 @@ const Aboutme = () => {
           <h2 className="text-center mb-5">About Me</h2>
           <div className="aboutme-intro">
             <img src={avatar} alt="" className="avatar"/>
-            <p>Hi, I'm Xinyue Chen, a front-end developer. I also love doing back-end development. I'm passion to learn new technology in my free time. Currently studying in <a className="school-link" href="https://www.mst.edu/">Missouri University of Science and Technology</a> as a graduate student. I've been building stuff on web since my college. I've made many side projects and I'm also be able to use React to build delightful user interfaces. <br /><a href={resume} className="btn btn-default" target="_blank">Download Resume</a></p>      
+            <p>Hi, I'm Xinyue Chen, a full-stack developer. I love doing front-end and back-end development. I'm passion to learn new technology in my free time. Currently studying in <a className="school-link" href="https://www.mst.edu/">Missouri University of Science and Technology</a> as a graduate student. I've been building stuff on web since my college. I've made many side projects and I'm also be able to use React, Express, Node JS, and MongoDB to build delightful apps. <br /><a href={resume} className="btn btn-default" target="_blank">Download Resume</a></p>      
           </div>
           
           {/* Education Timeline */}

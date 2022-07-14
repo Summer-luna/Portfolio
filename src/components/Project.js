@@ -7,7 +7,9 @@ const Project = ({projects}) => {
         <a href={link} className="card-img-link"><img src={image} className="card-img-top" alt={title} /></a>
         <div className="card-body">
           <h5 className="card-title">{title}</h5>
-          <Tags tags={tags} />
+          <div className="card-tags">
+            <Tags tags={tags} />
+          </div>
           <div className="card-text" >
             <a href={link} className=""><i className="bi bi-github"></i>Github</a>
             <a href={webLink} className='web-view'>View</a>

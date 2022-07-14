@@ -43,8 +43,13 @@
   padding-bottom: 0.5rem;
 }
 
+.card-tags{
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .card-tag{
-  margin-right: 1rem;
+  margin-right: 0.5rem;
 }
 
 .card-text{

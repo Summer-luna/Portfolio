@@ -30,6 +30,18 @@ const Skill = () => {
               <p>Node JS</p>
           </div>
           <div className='col'>
+            <i className="devicon-express-original"></i>
+            <p>Express JS</p>
+          </div>
+          <div className='col'>
+            <i className="devicon-mongodb-plain"></i>
+            <p>MongoDB</p>
+          </div>
+          <div className='col'>
+            <i className="devicon-heroku-original"></i>
+            <p>Heroku</p>
+          </div>
+          <div className='col'>
             <i class="devicon-mysql-plain" style={{fontSize: "4rem"}}></i>
               <p>MySQL</p>
           </div>
@@ -78,6 +90,7 @@ const Skill = () => {
             <i class="devicon-python-plain"></i>
             <p>Python</p>
           </div>
+
         </div>       
     </div>
   )

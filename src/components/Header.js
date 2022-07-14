@@ -6,18 +6,13 @@ const Header = () => {
   const buttonRef = useRef(null);
   const navlistRef = useRef(null);
 
-  const onClickNav = (e) => {
+  const addRedDot = (e) => {
     const navLink = document.querySelectorAll(".nav-link");
     const targetElement = e.target;
 
     if(targetElement.classList.contains("nav-link")){
       /* Loop through all .nav-links to find if contains class called active-link */
-      navLink.forEach(link => {
-        /* If so, remove it */
-        if(link.classList.contains("active-link")){
-          link.classList.remove("active-link");
-        }
-      });
+      navLink.forEach(link => link.classList.contains("active-link") && link.classList.remove("active-link"));
   
       targetElement.classList.add("active-link");
     }
@@ -29,36 +24,27 @@ const Header = () => {
    * show nav-list by toggle active-navlist
   */
  
-  const onClickMenu = () =>{
+  const onClickMenu = (e) =>{
     buttonRef.current.classList.toggle("nav-toggle");
     navlistRef.current.classList.toggle("active-navlist");
   }
-
 
   return(
     <>
       <header className="header">
         <div className="nav container px-15">
-          {/* nav logo */}
-          <a href="/">
-            <i className="bi bi-moon-stars"></i>
-          </a>
-          {/* nav menu*/}
+          <a href="/"><i className="bi bi-moon-stars"></i></a>
           <div className="nav-menu">
-            {/* nav list */}
-            <ul className="nav-list" onClick={ onClickNav } ref={navlistRef}>
-
+            <ul className="nav-list" onClick={ addRedDot } ref={navlistRef}>
               <NavItem name="Home" link="#home" activeLink="active-link" />
               <NavItem name="Skills" link="#skills" activeLink="" />
               <NavItem name="Projects" link="#projects" activeLink="" />
               <NavItem name="About me" link="#Aboutme" activeLink="" />
               <NavItem name="Contact" link="#contact" activeLink="" />
               <NavItem name="Blog" link="#blog" activeLink="" />
-
             </ul>
           </div>
           <div className="nav-btn" onClick={onClickMenu} ref= {buttonRef} >
-            {/* toggle button */}
             <div className="nav-lines">
               <div className="nav-line1"></div>
               <div className="nav-line2"></div>

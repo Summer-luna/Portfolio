@@ -1,0 +1,58 @@
+@import './categories';
+
+.project{
+  //background-color: aquamarine;
+  gap: 2rem;
+}
+
+@keyframes img-push
+{
+  50%{
+    transform: translateY(-1rem);
+  }
+  100%{
+    transform: translateY(0);
+  }
+}
+
+.card{
+  width: 18rem;
+  border-radius: 5%;
+  background-color: rgba(255, 255, 255, 0.57);
+  box-shadow: $box-shadow;
+  &:hover{
+    animation-name: img-push;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-iteration-count: 1;
+  }
+}
+
+.card-img-top{
+  border-radius: 5% 5% 0 0;
+  width: 100%;
+  height: 200px;
+}
+
+.card-body{
+  padding: 1rem;
+}
+
+.card-title{
+  font-size: 1rem;
+  padding-bottom: 0.5rem;
+}
+
+.card-tag{
+  margin-right: 1rem;
+}
+
+.card-text{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.5rem;
+  i{
+    padding-right: 0.5rem;
+  }
+}
+

@@ -8,6 +8,7 @@ const Skill = () => {
   return(
     <div className='skills' id="skills">
         <h2>SKILLS & TOOLS</h2>
+        <h2>Front-end:</h2>
         <div className='row'>
           <div className='col'>
             <FontAwesomeIcon icon={faHtml5} className="icon" />
@@ -26,6 +27,25 @@ const Skill = () => {
               <p>React</p>
           </div>
           <div className='col'>
+            <i class="devicon-tailwindcss-original-wordmark"></i>
+            <p>Tailwindcss</p>
+          </div>
+          <div className='col'>
+            <i class="devicon-bootstrap-plain" style={{fontSize: "4rem"}}></i>
+            <p>Bootstrap</p>
+          </div>
+          <div className='col'>
+            <FontAwesomeIcon icon={faSass} className="icon" />
+              <p>Sass</p>
+          </div>
+          <div className='col'>
+            <img src={responsive} style={{width: "4rem"}}></img>
+              <p>Responsive Websites</p>
+          </div>
+        </div>
+        <h2>Back-end:</h2>
+        <div className='row'>
+          <div className='col'>
             <FontAwesomeIcon icon={faNode} className="icon" />
               <p>Node JS</p>
           </div>
@@ -38,8 +58,12 @@ const Skill = () => {
             <p>MongoDB</p>
           </div>
           <div className='col'>
-            <i className="devicon-heroku-original"></i>
-            <p>Heroku</p>
+            <i class="devicon-firebase-plain"></i>
+            <p>Firebase</p>
+          </div>
+          <div className='col'>
+            <i class="devicon-nextjs-original colored"></i>
+            <p>Next.js</p>
           </div>
           <div className='col'>
             <i class="devicon-mysql-plain" style={{fontSize: "4rem"}}></i>
@@ -49,15 +73,22 @@ const Skill = () => {
             <i class="devicon-php-plain" style={{fontSize: "4rem"}}></i>
             <p>PHP</p>
           </div>
-          <div className='col'>
-            <i class="devicon-bootstrap-plain" style={{fontSize: "4rem"}}></i>
-            <p>Bootstrap</p>
-          </div>
-          <div className='col'>
-            <i class="devicon-webpack-plain" style={{fontSize: "4rem"}}></i>
-            <p>Webpack</p>
-          </div>
           
+          
+          <div className='col'>
+            <i class="devicon-python-plain"></i>
+            <p>Python</p>
+          </div>
+        </div> 
+        <h2>Deploy</h2>      
+        <div className='row'>
+          <div className='col'>
+              <i className="devicon-heroku-original"></i>
+              <p>Heroku</p>
+          </div>
+        </div>
+        <h2>Tools</h2> 
+        <div className='row'>
           <div className='col'>
             <FontAwesomeIcon icon={faGitAlt} className="icon" />
               <p>Git</p>
@@ -67,31 +98,22 @@ const Skill = () => {
               <p>Github</p>
           </div>
           <div className='col'>
-            <FontAwesomeIcon icon={faSass} className="icon" />
-              <p>Sass</p>
+            <FontAwesomeIcon icon={faWordpress} className="icon" />
+              <p>Wordpress</p>
           </div>
-          <div className='col'>
+          {/* <div className='col'>
             <FontAwesomeIcon icon={faTerminal} className="icon" />
               <p>Command Line</p>
           </div>
           <div className='col'>
             <i className="devicon-visualstudio-plain" style={{fontSize: "4rem"}} ></i>
               <p>VS Code</p>
-          </div>
+          </div> */}
           <div className='col'>
-            <img src={responsive} style={{width: "4rem"}}></img>
-              <p>Responsive Websites</p>
+            <i class="devicon-webpack-plain" style={{fontSize: "4rem"}}></i>
+            <p>Webpack</p>
           </div>
-          <div className='col'>
-            <FontAwesomeIcon icon={faWordpress} className="icon" />
-              <p>Wordpress</p>
-          </div>
-          <div className='col'>
-            <i class="devicon-python-plain"></i>
-            <p>Python</p>
-          </div>
-
-        </div>       
+        </div>
     </div>
   )
 }

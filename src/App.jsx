@@ -1,15 +1,13 @@
-import React from "react";
-import Header from './components/Header';
+import Header from "./components/layout/Header";
 import Introduction from "./components/Inroduction";
 import Projects from "./components/Projects";
 import Skill from "./components/Skill";
 import Aboutme from "./components/Aboutme";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
-
-
+import React from "react";
 const App = () => {
-  return(
+  return (
     <div className="container text-montserrat">
       <Header />
       <Introduction />
@@ -19,7 +17,7 @@ const App = () => {
       <Contact />
       <Footer />
     </div>
-  )
-}
+  );
+};
 
 export default App;

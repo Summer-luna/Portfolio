@@ -1,0 +1,123 @@
+@import "fonts.css";
+@import "variables.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+@layer components {
+
+  .outlinedBtn {
+    @apply w-full w-max rounded border border-green text-green cursor-pointer hover:bg-green-tint active:bg-green-tint focus:bg-green-tint font-mono leading-none
+  }
+
+  .outlinedBigBtn {
+    @apply outlinedBtn py-4 px-12 mt-[25px] mx-auto mb-0 text-base
+  }
+
+  .outlinedSmallBtn {
+    @apply outlinedBtn py-2 px-4 text-sm ml-2
+  }
+
+  .vertical-text {
+    text-orientation: mixed;
+    writing-mode: vertical-rl;
+  }
+
+  .hero-fluid-text {
+    font-size: clamp(12px, 2vw, 14px);
+  }
+
+  .big-heading {
+    font-size: clamp(40px, 8vw, 80px);
+  }
+
+  .numbered-heading {
+    counter-increment: section 1;
+  }
+
+  .numbered-heading .headingText {
+    font-size: clamp(20px, 5vw, 35px);
+  }
+
+  .numbered-heading h1:before {
+    @apply font-mono text-green;
+    content: "0" counter(section) ".";
+    font-size: clamp(16px, 3vw, 20px);
+    margin-right: 10px;
+    font-weight: normal;
+  }
+
+  .numbered-heading h1:after {
+    @apply w-36 md:w-60 lg:w-80 bg-lightest-navy;
+    content: '';
+    position: relative;
+    top: -5px;
+    height: 1px;
+    margin-left: 20px;
+  }
+
+  /* fade animation */
+
+  /* === Enter Transition === */
+  .fade-enter {
+    opacity: 0 !important;
+  }
+
+  .fade-enter-active {
+    @apply opacity-100 !important;
+    transition: opacity 5s !important;
+  }
+
+  .fade-enter-done {
+    opacity: 1;
+  }
+
+  /* === Exit Transition === */
+
+
+  .fade-exit {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  .fade-exit-active {
+    opacity: 0;
+    transform: scale(0.9);
+    transition: opacity 300ms, transform 300ms;
+  }
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  scroll-behavior: smooth !important;
+}
+
+body {
+  @apply bg-nav text-slate font-sans text-fz-xl;
+  width: 100%;
+  min-height: 100%;
+  height: 100vh;
+  line-height: 1.3;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+li {
+    list-style: none;
+}

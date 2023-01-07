@@ -1,0 +1,27 @@
+.Li {
+    counter-increment: count 1;
+}
+
+.Li:before{
+    content: '0' counter(count) '.';
+    display: block;
+    margin-bottom: 5px;
+    color: var(--green);
+    font-size: var(--fz-sm);
+}
+
+.FluidWidth {
+    width: min(75vw, 400px);
+}
+
+.WiderScreenLi{
+    counter-increment: count 1;
+}
+
+.WiderScreenLi:before{
+    content: '0' counter(count) '.';
+    display: inline-block;
+    margin-bottom: 5px;
+    color: var(--green);
+    font-size: var(--fz-sm);
+}

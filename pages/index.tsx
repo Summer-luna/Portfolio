@@ -1,6 +1,4 @@
 import Head from 'next/head'
-import { Inter } from '@next/font/google'
-import styles from '../public/styles/Home.module.css'
 import {Hero} from "../components/sections/hero";
 import {About} from "../components/sections/about";
 import Project from "../components/sections/project";
@@ -36,6 +34,7 @@ export async function getStaticProps() {
     return {
         props: {
             projects: projects
-        }
+        },
+        revalidate: 10
     }
 }

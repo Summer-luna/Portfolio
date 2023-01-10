@@ -3,7 +3,7 @@ date: ''
 title: 'Personal Budget App'
 cover: 'demo.png'
 github: 'https://github.com/Summer-luna/Travel-Social-Media-App'
-external: ''
+external: '/#Project'
 tech:
 - Angular
 - TypeScript

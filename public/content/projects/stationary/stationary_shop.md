@@ -3,7 +3,7 @@ date: ''
 title: 'Stationary Shop'
 cover: 'demo.png'
 github: 'https://github.com/Summer-luna/E-Commerce'
-external: 'https://mern-e-commerce-first-app-1.herokuapp.com/'
+external: 'https://stationary-store.onrender.com/'
 tech:
 - React
 - Express.js

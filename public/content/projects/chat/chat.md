@@ -3,7 +3,7 @@ date: ''
 title: 'Online Group Chat'
 cover: 'demo.png'
 github: 'https://github.com/Summer-luna/Travel-Social-Media-App'
-external: 'https://travel-social-media-app.vercel.app/'
+external: ''
 tech:
 - React
 - Node.js

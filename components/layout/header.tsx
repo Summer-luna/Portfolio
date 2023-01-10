@@ -26,7 +26,7 @@ export const Header = () => {
           </a>
         </div>
         <div className="hidden md:flex w-full justify-end gap-3 items-center">
-          <ol className="p-0 m-0 flex gap-3">
+          <ol className="p-0 m-0 flex gap-3 after:content-['']">
             {data &&
               data.navLinks.map(({ name, url }, index) => {
                 return (

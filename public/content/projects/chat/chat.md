@@ -3,7 +3,7 @@ date: ''
 title: 'Online Group Chat'
 cover: 'demo.png'
 github: 'https://github.com/Summer-luna/Travel-Social-Media-App'
-external: '/#Project'
+external: 'https://chat-app-full.onrender.com/chat'
 tech:
 - React
 - Node.js

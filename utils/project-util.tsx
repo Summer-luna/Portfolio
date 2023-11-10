@@ -46,7 +46,6 @@ export const getProjectData = (folderName:string, fileName:string):{ [p: string]
 }
 
 export const getAllProjects = ():{ [p: string]: any; content: string }[] => {
-  console.log(getProjectFolderNames());
   return getProjectFolderNames().map(folderName => {
 
     const filename = getProjectFiles(path.join(projectsDirectory, folderName)).filter((filename)=>{

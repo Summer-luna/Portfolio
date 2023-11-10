@@ -3,8 +3,8 @@ import {MyPhoto} from "../ui/myPhoto";
 export const About = ():JSX.Element => {
 
     const skills = {
-        proficient: ["HTML/CSS", "JavaScript", "Java", "Node.js", "Express", "React", "SQL", "Git"],
-        familiarized: ["PHP", "Python", "TypeScript", "Angular.js", "MongoDB", "Firebase", "Next.js", "Wordpress", "Bootstrap", "Tailwindcss"]
+        proficient: ["HTML/CSS", "JavaScript","TypeScript", "Java", "Node.js", "Express", "React", "SQL", "Github/Git", "Nest.js", "Prisma", "PostgreSQL", "GraphQL"],
+        familiarized: ["PHP", "Python", "Angular.js", "MongoDB", "Firebase", "Next.js", "Wordpress", "Bootstrap", "Tailwindcss", "Material UI", "Docker"]
     }
 
   return <section className="py-10 numbered-heading" id="About">
